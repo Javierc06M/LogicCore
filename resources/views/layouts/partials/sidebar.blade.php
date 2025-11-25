@@ -8,7 +8,7 @@
     <nav>
       <div class="nav-section">
         <div class="nav-title">Principal</div>
-        <a href="#" class="nav-item active" data-title="Dashboard">
+        <a href="#" class="nav-item" data-title="Dashboard">
           <i data-lucide="layout-dashboard"></i><span>Dashboard</span>
         </a>
         <a href="#" class="nav-item" data-title="Reportes">
@@ -37,7 +37,7 @@
         <a href="#" class="nav-item" data-title="Inventario">
           <i data-lucide="package"></i><span>Inventario</span>
         </a>
-        <a href="#" class="nav-item" data-title="Clientes">
+        <a href="{{ route('admin.clients.index') }}" class="nav-item {{ request()-> routeIs('admin.clients.index') ? 'active' : '' }}" data-title="Clientes">
           <i data-lucide="users"></i><span>Clientes</span>
         </a>
         <a href="#" class="nav-item" data-title="Configuración">
